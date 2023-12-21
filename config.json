@@ -1,0 +1,90 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "/images/qualtrics_logo.png",
+    "iconSmall": "/images/qualtrics_logo.png",
+    "category": "custom"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "CloudPage POST",
+      "description": "Journey Builder Custom Activity",
+      "step1Label": "Configure Activity"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments":[],
+      "outArguments": [],
+      "url": "https://eoo05tapbff52e5.m.pipedream.net",
+      "headers": "{\"Authorization\":\"Bearer theToken\"}",
+      "verb": "POST",
+      "body": "",
+      "timeout": 20000,
+      "retryCount": 5,
+      "retryDelay": 10000
+    }
+  },
+  "configurationArguments": {
+    "save": {
+      "inArguments":[
+        {"subscriberKey":"saveArgument"}
+      ],
+      "outArguments": [],
+      "url": "https://my.claytonhomes.com/uuD6FgpRqhmz",
+      "verb": "POST",
+      "body": ""
+    },
+    "publish": {
+      "inArguments":[
+        {"subscriberKey":"saveArgument"}
+      ],
+      "outArguments": [],
+      "url": "https://my.claytonhomes.com/uuD6FgpRqhmz",
+      "verb": "POST",
+      "body": ""
+    },
+    "stop": {
+      "inArguments":[
+        {"subscriberKey":"saveArgument"}
+      ],
+      "outArguments": [],
+      "url": "https://my.claytonhomes.com/uuD6FgpRqhmz",
+      "body": "",
+      "verb": "POST"
+    },
+    "validate": {
+      "inArguments":[
+        {"subscriberKey":"validateArgument"}
+      ],
+      "outArguments": [
+        {"subscriberKey":"validateArgument"}
+      ],
+      "url": "https://my.claytonhomes.com/uuD6FgpRqhmz",
+      "body": "",
+      "verb": "POST"
+    }
+  },
+  "wizardSteps": [
+    {
+      "label": "Configure Activity",
+      "key": "step1"
+    }
+  ],
+  "userInterfaces": {
+    "configModal": {
+      "height": 640,
+      "width": 900,
+      "fullscreen": false
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": []
+      }
+    }
+  }
+}
